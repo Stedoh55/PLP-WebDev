@@ -1,0 +1,100 @@
+body{
+	font-family: Arial, sans-serif;
+	background-size: cover;
+	background-position: center; /*Make the background apply at 
+								 the center of content*/
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 320px;
+	padding: 20px;
+	text-align: center;
+
+	/*Making a circular margin, some shadow effects
+	 & a whitish background*/
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+	font-size: 28px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+input[type="text"]{
+	width: 100%; /*Fill out the input box throughout the allowable box*/
+	padding: 12px;
+	margin-bottom: 12px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+button{
+	background-color: #007bff; /*Colour of the button background*/
+	color: #fff; /*Colour of content in the button (Word 'Search')*/
+	border: none; /*Remove the default black border of the button*/
+	padding: 12px 20px; /*Top & bottom: 12px then Left & Right: 20px from corners of button*/
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+
+	cursor: pointer; /*Change cursor to pointer(hand) 
+	when hovering on the button*/
+}
+
+
+						/*Other Cursors*/
+
+	/*alias - Change to cursor with a shortcut on its top
+	progress,wait - Change to rolling blue circle of 'loading'
+	copy  - Change to arrow with the star on its top
+	help - Change to arrow with the question mark (?) on its top
+	no-drop,not-allowed	 - Change to restricted( red ring slanted diagonaly '🚫')
+	s-resize - Change cursor to resize vertically, double arrows '↕'
+	w-resize,ew-resize,e-resize - Change cursor to resize horizontally, double arrows '↔'
+	nw-resize,nwse-resize,se-resize - Change cursor to resize diagonally to left, double arrows '↖↘'
+	sw-resize,newsw-resize,ne-resize - Change cursor to resize diagonally to right, double arrows '↙↗'
+	row-resize - Change row width sign as in tables
+	cell - Change cursor to add cell plus sign as in excel '➕'
+	crosshair - Change cursor to thin plus sign '+'
+	default - Return default arrow cursor '↗'
+	text - Change cursor to vertical line('inverted H') as in texts
+	move,all-scroll - Change cirsor to four directional lines with arrows at its tips
+	none - Hide the cursor to nothing
+	vertical-text - Change cursor to vertical line as 'H' in vertical text
+	inherit - Return mother cursor
+	unset - Return default
+	col-resize - Change column width sign as in tables
+	context-menu - Return default cursor
+	zoom-out - Change cursor to zoom with '-' in it
+	zoom-in - Change cursor to zoom with '+' in it
+*/
+						/**/
+						/**/
+button:hover{
+	background-color: #0056b3;
+}
+
+.weather-info{
+	margin-top: 20px;
+}
+
+#temperature{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#description{
+	margin-top: 10px;
+	font-size: 18px;
+	color: #666;
+}
+
